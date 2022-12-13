@@ -1,0 +1,25 @@
+{
+  "name": "mamarmite-markdown",
+  "version": "0.0.1",
+  "description": "",
+  "main": "start.ts",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./bin/start.js",
+    "dev": "ts-node -r tsconfig-paths/register src/start.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http-status-codes": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.13",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.1",
+    "typescript": "^4.9.4"
+  }
+}
