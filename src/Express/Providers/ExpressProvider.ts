@@ -3,6 +3,7 @@ import AppContract from "@/Express/Contracts/AppContract";
 
 
 export default class ExpressProvider {
+
     public app: AppContract;
     public express: express.Application;
 

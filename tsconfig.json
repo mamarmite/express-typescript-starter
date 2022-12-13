@@ -14,7 +14,10 @@
     "rootDirs": [ "./src", "./tests" ],
     "paths": {
       "@/*": ["*"],
-      "@Server/*": ["Server/*"]
+      "@Server/*": ["Server/*"],
+      "@App/*": ["App/*"],
+      "@crud/*": ["CRUD/*"],
+      "@express/*": ["Express/*"]
     },
     "outDir": "build",
     "esModuleInterop": true,
