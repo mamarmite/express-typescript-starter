@@ -2,7 +2,11 @@
   "ts-node": {
     // these options are overrides used only by ts-node
     "compilerOptions": {
-      "module": "commonjs"
+      "module": "commonjs",
+      "typeRoots": [
+        "./src/@types/express",
+        "./node_modules/@types"
+      ]
     }
   },
   "compilerOptions": {
@@ -10,20 +14,24 @@
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
-    "baseUrl": "./src/",
+    "baseUrl": "./",
     "rootDirs": [ "./src", "./tests" ],
     "paths": {
-      "@/*": ["*"],
-      "@Server/*": ["Server/*"],
-      "@App/*": ["App/*"],
-      "@crud/*": ["CRUD/*"],
-      "@express/*": ["Express/*"]
+      "@/*": ["src/*"],
+      "@Server/*": ["src/Server/*"],
+      "@App/*": ["src/App/*"],
+      "@crud/*": ["src/CRUD/*"],
+      "@express/*": ["src/Express/*"]
     },
     "outDir": "build",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "typeRoots": [
+      "./src/@types/express",
+      "./node_modules/@types"
+    ]
   }
 }
